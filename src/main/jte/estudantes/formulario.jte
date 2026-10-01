@@ -1,9 +1,11 @@
 <!doctype html>
 <html lang="pt-BR">
-<head><meta charset="UTF-8"><title>Novo estudante</title></head>
+<head>
+    <link rel="stylesheet" href="/css/formulario.css">
+    <meta charset="UTF-8"><title>Novo estudante</title></head>
 <body>
     <h1>Novo estudante</h1>
-    <form method="post" action="/estudantes/confirmar">
+    <form method="post" action="/estudantes">
 
         <label for="nome">Nome</label>
         <input type="text" id="nome" name="nome">
@@ -16,9 +18,6 @@
 
         <label for="dataNascimento">Data de Nascimento</label>
         <input type="date" id="dataNascimento" name="dataNascimento">
-
-        <label for="cidade">Cidade</label>
-        <input type="text" id="cidade" name="cidade">
 
         <label for="anoIngresso">Ano de ingresso</label>
         <input type="number" id="anoIngresso" name="anoIngresso" value="2026">
@@ -35,7 +34,7 @@
         <datalist id="cidades">
             <option value="Cajazeiras"></option>
             <option value="Sousa"></option>
-            <option value="São José de Piranhas"></option>
+            <option value="Santa Helena"></option>
         </datalist>
 
         <fieldset>
@@ -54,6 +53,8 @@
         <textarea id="observacoes" name="observacoes" rows="4"></textarea>
         
      <button type="submit">Continuar</button>
+
+
     </form>
 </body>
 </html>
